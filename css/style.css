@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+.inner-all {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* header-bar */
+
+.header-bar {
+  position : fixed;
+  width: 100%;
+  background-color: #fff;
+}
+
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bolt-icon {
+  padding: 15px 0;
+  font-size: 2.0em;
+  color: #4e4e4e;
+}
+
+.header-text {
+  font-size: 12px;
+  padding: 14px 12px;
+  background-color: #74cfae;
+  color: #fff;
+}
+
+/* theme */
+
+.main-theme {
+  background-color: #f2f2f2;
+}
+
+.theme-box {
+  text-align: center; 
+  vertical-align: middle;
+  padding: 250px 0;
+}
+
+.theme-text-top {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #74cfae;
+}
+
+.theme-text-bottom {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+/* what we can do */
+
+.article-group {
+  background-color: #74cfae;
+}
+
+.article-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.article-caption {
+  padding-top: 50px;
+}
+
+.artical-text-box {
+  padding-left: 50px;
+}
+
+
+.artical-text-top {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.artical-text-bottom {
+  margin-top: 35px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* OUR LAST WORK */
+
+.container-group {
+  background-color: #f2f2f2;
+}
+
+.container-box {
+  
+}
+
+
+.container-caption {
+}
+
+.container-text {
+  font-size: 24px;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.global-caption {}
+
+.main-caption {
+  display: table;
+  font-size: 0;
+  padding-bottom: 80px;
+}
+
+.is-area {
+  display: table-cell;
+  padding-right: 100px;
+}
+
+
+/* .caption-primary {} */
+
+.main-caption:last-child {
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.caption-text-area {}
+
+.caption-box {
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.is-detail {
+  display: table-cell;
+}
+
+.caption-text {
+  color: #6f7070;
+  font-size: 20px;
+  padding: 90px 90px 70px 200px;
+}
+
+.caption-button {
+  background-color: #74cfae;
+  color: #fff;
+  padding: 14px 20px;
+}
+
+/* our skills */
+
+.item-list {
+  background-color: #4e4e4e;
+}
+
+.information-text-box {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.information-text {
+  font-size: 24px;
+  color: #fff;
+}
+
+.information-feature {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.information-detail {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin: 0 90px;
+}
+
+.lead-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.global-menu {
+  background-color: #f2f2f2;
+}
+
+.logo-info {}
+
+.logo-box {}
+
+.input-area {}
+
+.input-contact {
+  text-align: center;
+  padding: 200px 0;
+}
+
+.input-logo {
+  text-align: center;
+  width: 185px;
+  padding: 25px 0;
+  font-size: 1.5em;
+  color:	#74cfae;
+  background-color: #fff;
+}
+
+.foot-bar {
+  background-color: #74cfae;
+}
+
+.footer-box {
+  text-align: right;
+}
+
+.footer-text {
+  padding: 20px 0 25px 0;
+  font-size: 12px;
+  color: #fff;
+}
