@@ -1,31 +1,44 @@
 @charset "utf-8";
 
-body {
+/* all-Reflection */
+
+.body {
   font-family: "Lato";
 }
+
+.artical-text-top,
+.container-text,
+.information-text {
+  font-family: "Raleway"
+}
+
 
 .inner-all {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* header-bar */
-
-.header-bar {
-  position : fixed;
-  width: 100%;
-  background-color: #fff;
+img {
+  vertical-align: bottom;
 }
 
+/* header-bar */
+
+.header-group {
+  background-color: #fff;
+  position : fixed;
+  top: 0;
+  width: 100%;
+}
 
 .header-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 0;
 }
 
 .bolt-icon {
-  padding: 15px 0;
   font-size: 2.0em;
   color: #4e4e4e;
 }
@@ -39,17 +52,21 @@ body {
 }
 
 .header-icon:hover {
-  transition: all 0.3s ease;
-  background-color: #333;
+  transition: all 1.5s ease;
+  color: #333;
 }
 
 /* theme */
+
+.main-group {
+  padding-top: 70px;
+}
 
 .main-theme {
   background-color: #f2f2f2;
 }
 
-.theme-box {
+.main-box {
   text-align: center; 
   vertical-align: middle;
   padding: 250px 0;
@@ -73,22 +90,20 @@ body {
   background-color: #74cfae;
 }
 
-.article-box {
+.section-box {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.article-box {
+  align-items: flex-start;
+  justify-content: flex-end; 
   padding-top: 50px;
 }
 
 .artical-text-box {
   margin-left: 80px;
+  text-align: center;
+  width: 69%;
 }
 
 .is-artical-Common {
-  text-align: center;
   color: #fff;
 }
 
@@ -97,22 +112,19 @@ body {
 }
 
 .artical-text-bottom {
+  text-align: center;
   margin-top: 35px;
   font-size: 20px;
 }
 
 /* OUR LATEST WORK */
 
-article {
-  font-family: "Raleway"
-}
-
 .container-group {
   background-color: #f2f2f2;
 }
 
-.container-box {
-  padding: 60px 0 100px 0;
+.article-box {
+  padding: 60px 0 70px 0;
 }
 
 .container-text {
@@ -122,22 +134,28 @@ article {
   color:  #727171
 }
 
+.caption-group {
+  width: 100%;
+  height: 680px;
+}
+
 .caption-primary {
   float: left;
   margin-right: 100px;
   margin-bottom: 80px;
+  transition: all 0.3s ease;
+  opacity: 0.3;
 }
 
 .caption-primary:hover {
-  opacity: 0.7;
-  transition: all 0.3s ease;
+  opacity: 1.0;
 }
 
 .caption-primary:nth-child(3n) { 
   margin-right: 0;
 }
 
-.caption-primary:nth-child(n+4) {
+.caption-primary:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
 
@@ -153,8 +171,9 @@ article {
 }
 
 .caption-text {
-  margin-right: 250px;
+  margin-right: 90px;
   font-size: 16px;
+  width: 49%;
   text-align: center;
   color: #6f7070;
 }
@@ -164,19 +183,15 @@ article {
   padding: 14px 20px;
   background-color: #74cfae;
   color: #fff;
+  transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .caption-button:hover {
-  transition: all 0.3s ease;
-  background-color: #333;
+  color: #333;
 }
 
 /* our skills */
-
-section {
-  font-family: "Raleway"
-}
 
 .item-list {
   background-color: #4e4e4e;
@@ -198,10 +213,15 @@ section {
 .information-feature {
   display: flex;
   justify-content: center;
+  margin-top: 50px
 }
 
 .information-detail {
-  margin: 50px 90px 0;
+  margin-right: 180px ;
+}
+
+.information-detail:last-child {
+  margin-right: 0px ;
 }
 
 .lead-text {
@@ -211,31 +231,35 @@ section {
   color: #fff;
 }
 
-/* snsロゴ */
+/* SNSロゴ */
 
 .global-menu {
   background-color:#f2f2f2;
 }
 
-.input-contact {
+.nav-box {
   padding: 200px 0;
+}
+
+.input-contact {
   text-align: center;
 }
 
 .input-logo {
-  background-color: #f2f2f2;
-  padding: 30px 0;
+  padding: 20px 0px;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .input-logo:hover {
-  transition: all 0.3s ease;
+  text-align: center;
   background-color: #fff;
 }
 
 .input-text {
-  color: #74cfae;
-  font-size: 2.0em;
   width: 185px;
+  font-size: 2.0em;
+  color: #74cfae;
 }
 /* 下部バー */
 
@@ -245,10 +269,10 @@ section {
 
 .footer-box {
   text-align: right;
+  padding: 20px 0 25px 0;
 }
 
 .footer-text {
-  padding: 20px 0 25px 0;
   font-size: 12px;
   color: #fff;
 }
