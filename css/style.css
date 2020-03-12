@@ -1,8 +1,14 @@
 @charset "utf-8";
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* all-Reflection */
 
-.body {
+body {
   font-family: "Lato";
 }
 
@@ -98,7 +104,7 @@ img {
 .artical-text-box {
   margin-left: 80px;
   text-align: center;
-  width: 69%;
+  width: 60%;
 }
 
 .is-artical-Common {
@@ -139,30 +145,21 @@ img {
 .caption-primary {
   float: left;
   margin-right: 100px;
-  margin-bottom: 80px;
-}
-
-.carousel {
+  margin-top: 80px;
   opacity: 0.7;
   transition: all 0.3s ease;
 }
 
-@media (min-width: 1100px) {
-  a:hover img {
-    opacity:1.0;
+.caption-primary:hover {
+  opacity: 1;
 }
-
-/* .carousel:hover {
-  opacity: 1.0;
-} */
-
 
 .caption-primary:nth-child(3n) { 
   margin-right: 0;
 }
 
-.caption-primary:nth-of-type(n+3) {
-  margin-bottom: 0;
+.caption-primary:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 .caption-box {
@@ -171,7 +168,8 @@ img {
 
 .caption-text-box {
   margin-top: 90px;
-  display: inline-flex;
+  /* pad↓元はこれdisplay: inline-flex; */
+  display: flex;
   justify-content: center;
   align-items: flex-start;
 }
@@ -283,3 +281,154 @@ img {
   color: #fff;
 }
 
+
+
+
+
+
+/* tabb */
+
+@media screen and ( max-width:1199px) {
+  .inner-all {
+    max-width: 97%;
+  }
+
+  /* header-bar */
+  /* theme */
+  /* what we can do */
+
+  .section-box {
+    display: block;
+    text-align: center;
+    padding: 50px 0px 25px;
+  }
+
+  .artical-text-box {
+    margin: 0 auto;
+  }
+
+  .artical-text-top {
+    margin-top: 20px;
+  }
+
+  /* OUR LATEST WORK */
+
+  .caption-group {
+    text-align: center;
+    clear: both;
+  }
+
+  .caption-primary {
+    display: block;
+    float: none;
+    margin-right: 0
+  }
+
+  .caption-primary:nth-child(3n) { 
+    margin-bottom: 80px;
+  }
+
+  .caption-primary:nth-child(n+3) {
+    margin-top: 0;
+  }
+
+  .caption-text-box {
+    margin-top: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .caption-text {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .caption-button {
+    margin-top: 40px;
+  }
+
+  /* our skills */
+
+  .information-feature {
+    display: block;
+  }
+
+  .information-detail {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 88px;
+  }
+
+  .information-detail:last-child {
+    margin-bottom: 0px;
+  }
+}
+  /* SNSロゴ */
+  /* 下部バー */
+  /* tabb終了 */
+
+
+
+
+/* sp */
+@media screen and (max-width:767px) { 
+  /*　画面サイズが767pxからはここを読み込む　*/
+
+  /* header-bar */
+
+  .bolt-icon {
+    font-size: 2.5em;
+  }
+
+  .header-icon {
+    display: none;
+  }
+
+  .content-icon {
+    padding: 10px;
+    float: right;
+    border-radius: 4px;
+    width: 30px;
+    border: 1px solid #ddd;
+  }
+  
+  .menu-icon {
+    border: 1px solid #ddd;
+    margin-bottom: 4px;
+  }
+
+  .menu-icon:last-child {
+    margin-bottom: 0;
+  }
+
+  /* theme */
+
+  .main-box {
+    padding: 160px 0 130px;
+  }
+  
+  .theme-text-top {
+    font-size: 80px;
+  }
+
+  /* what we can do */
+
+  .artical-text-box {
+    width: 82%;
+  }
+
+  /* OUR LATEST WORK */
+
+  .caption-text {
+    width: 71%;
+  }
+
+  /* our skills */
+  /* SNSロゴ */
+
+  .nav-box {
+    padding: 50px 0;
+    margin: 0 15px;
+  }
+  /* 下部バー */
+}
