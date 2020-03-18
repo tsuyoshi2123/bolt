@@ -6,8 +6,7 @@
   clear: both;
 }
 
-/* all-Reflection */
-
+  /* all-Reflection */
 body {
   font-family: "Lato";
 }
@@ -25,8 +24,19 @@ img {
   vertical-align: bottom;
 }
 
-/* header-bar */
+.is-font-group {
+  font-size: 24px;
+}
 
+.is-color-group {
+  background-color: #f2f2f2;
+}
+
+.is-content-color {
+  background-color: #74cfae;
+}
+
+  /* header-bar */
 .header-group {
   background-color: #fff;
   position : fixed;
@@ -51,7 +61,6 @@ img {
   padding: 14px 12px;
   font-size: 12px;
   color: #fff;
-  background-color: #74cfae;
   text-decoration	:none;
 }
 
@@ -60,14 +69,9 @@ img {
   color: #333;
 }
 
-/* theme */
-
+  /* theme */
 .main-group {
   padding-top: 70px;
-}
-
-.main-theme {
-  background-color: #f2f2f2;
 }
 
 .main-box {
@@ -84,16 +88,10 @@ img {
 }
 
 .theme-text-bottom {
-  font-size: 30px;
   color: #c0c0c0;
 }
 
-/* what we can do */
-
-.article-group {
-  background-color: #74cfae;
-}
-
+  /* what we can do */
 .section-box {
   display: flex;
   align-items: flex-start;
@@ -111,10 +109,6 @@ img {
   color: #fff;
 }
 
-.artical-text-top {
-  font-size: 24px;
-}
-
 .artical-text-bottom {
   text-align: center;
   margin-top: 35px;
@@ -123,16 +117,11 @@ img {
 
 /* OUR LATEST WORK */
 
-.container-group {
-  background-color: #f2f2f2;
-}
-
 .article-box {
   padding: 60px 0 70px 0;
 }
 
 .container-text {
-  font-size: 24px;
   text-align: center;
   margin-bottom: 40px;
   color:  #727171
@@ -142,10 +131,21 @@ img {
   width: 100%;
 }
 
-.caption-primary {
+.caption-article-box {
   float: left;
   margin-right: 100px;
   margin-top: 80px;
+}
+
+.caption-article-box:nth-child(3n) { 
+  margin-right: 0;
+}
+
+.caption-article-box:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.caption-primary {
   opacity: 0.7;
   transition: all 0.3s ease;
 }
@@ -154,21 +154,12 @@ img {
   opacity: 1;
 }
 
-.caption-primary:nth-child(3n) { 
-  margin-right: 0;
-}
-
-.caption-primary:nth-child(-n+3) {
-  margin-top: 0;
-}
-
 .caption-box {
   text-align: center;
 }
 
 .caption-text-box {
   margin-top: 90px;
-  /* pad↓元はこれdisplay: inline-flex; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -185,7 +176,6 @@ img {
 .caption-button {
   font-size: 12px;
   padding: 14px 20px;
-  background-color: #74cfae;
   color: #fff;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -195,8 +185,7 @@ img {
   color: #333;
 }
 
-/* our skills */
-
+  /* our skills */
 .item-list {
   background-color: #4e4e4e;
 }
@@ -235,12 +224,7 @@ img {
   color: #fff;
 }
 
-/* SNSロゴ */
-
-.global-menu {
-  background-color:#f2f2f2;
-}
-
+  /* SNSロゴ */
 .nav-box {
   padding: 200px 0;
 }
@@ -265,12 +249,8 @@ img {
   font-size: 40px;
   color: #74cfae;
 }
-/* 下部バー */
 
-.foot-bar {
-  background-color: #74cfae;
-}
-
+  /* 下部バー */
 .footer-box {
   text-align: right;
   padding: 20px 0 25px 0;
@@ -281,13 +261,7 @@ img {
   color: #fff;
 }
 
-
-
-
-
-
-/* tabb */
-
+  /* tabb */
 @media screen and ( max-width:1199px) {
   .inner-all {
     max-width: 97%;
@@ -296,7 +270,6 @@ img {
   /* header-bar */
   /* theme */
   /* what we can do */
-
   .section-box {
     display: block;
     text-align: center;
@@ -305,36 +278,28 @@ img {
 
   .artical-text-box {
     margin: 0 auto;
-  }
-
-  .artical-text-box {
     margin-top: 20px;
+    width: 92%;
   }
 
   /* OUR LATEST WORK */
-
   .caption-group {
     text-align: center;
-    clear: both;
     margin-bottom: 80px;
   }
 
-  .caption-primary {
+  .caption-article-box {
     display: block;
     float: none;
     margin-right: 0
   }
 
-  .caption-primary:nth-child(3n) { 
+  .caption-article-box:nth-child(3n) { 
     margin-bottom: 80px;
   }
 
-  .caption-primary:nth-child(n+3) {
+  .caption-article-box:nth-child(n+3) {
     margin-top: 0;
-  }
-
-  .caption-primary:last-child {
-    margin-bottom: 0;
   }
 
   .caption-text-box {
@@ -353,7 +318,6 @@ img {
   }
 
   /* our skills */
-
   .information-feature {
     display: block;
   }
@@ -372,18 +336,13 @@ img {
   .input-contact {
     font-size: 0;
   }
+
   /* 下部バー */
   /* tabb終了 */
-
-
-
-
-/* sp */
+  /* sp */
 @media screen and (max-width:767px) { 
   /*　画面サイズが767pxからはここを読み込む　*/
-
   /* header-bar */
-
   .bolt-icon {
     font-size: 2.5em;
   }
@@ -410,7 +369,6 @@ img {
   }
 
   /* theme */
-
   .main-box {
     padding: 160px 0 130px;
   }
@@ -420,26 +378,23 @@ img {
   }
 
   /* what we can do */
-
   .artical-text-box {
     width: 82%;
   }
 
   /* OUR LATEST WORK */
-
   .caption-text {
     width: 71%;
   }
 
   /* our skills */
   /* SNSロゴ */
-
   .nav-box {
     padding: 50px 15px;
   }
 
-   .input-logo {
+  .input-logo {
      width: 100%;
-   }
+  }
   /* 下部バー */
 }
